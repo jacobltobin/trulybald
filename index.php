@@ -8,6 +8,22 @@ $releases = json_decode($json);
 ?>
 
 <div id="content">
+	<div class="container-fluid">
+		<div class="col-md-6">
+			<h4><strong>recent important updates abou our company</strong></h4>
+			<hr>
+			<ul>
+				<li>shipping out tapes july 28 2016</li>
+				<li>how far do you lean your motorcycle?</li>
+				<li>elaborate bread</li>
+				<li>insect cleaner - why kill'em when you can clean'em? (thanks addison)</li>
+				<li>i was on the board (ceo or surf?)</li>
+				<li>lock-n'-load shish kabob gloves</li>
+				<li>musician sounds too much like magician and music is a craft in so where life is the whole casserole </li>
+			</ul>
+			<hr>
+		</div>
+	</div>
 	<div id="release-grid" class="container-fluid">
 		<br>
 		<div class="row">
@@ -52,27 +68,24 @@ $releases = json_decode($json);
 
 			<hr>
 
-			<p style="color: blue">truly bald is <strong>LOOSELY</strong> organized by jake tobin with the continued moral support of ben varian</p>
-			<p style="color: salmon">*full disclosure* :) presses are funded "out of pocket", all copies not needed to recover costs are given away to the artist or friends. so this way, should our "profit margin" be more than usual, it results in more copies for the artist to sell themselves, as opposed to thinly lining my shallow pockets.</p>
-			<p style="color: green">digital downloads are and will always be <em>free</em> here on this <strong style="color: red">website</strong> unless requested otherwise by the artist</p>
+			<p style="color: blue">truly bald is <strong>LOOSELY</strong> organized by __REDACTED__ with the continued moral support of __REDACTED__, __REDACTED__, __REDACTED__ Jr., and __REDACTED__</p>
+			<p style="color: salmon">*full disclosure* :) presses are funded by __REDACTED__, all copies not needed to recover costs are __REDACTED__ to __REDACTED__ or __REDACTED__. so this way, should __REDACTED__'s "profit margin" be more than usual, it results in more copies for __REDACTED__ to sell, as opposed to thinly lining __REDACTED__'s shallow pockets.</p>
+			<p style="color: green">digital downloads are and will always be <em>free</em> here on this <strong style="color: red">website</strong> unless requested otherwise by __REDACTED__</p>
 
 			<hr>
 			<p>Find various selections from our catalogue at :::</p>
 
 			<ul style="background-color: orange">
-				<li>retrofit records tallahassee</li>
-				<li>fresh produce, macon ga</li>
-				<li>deep thoughts, jp boston mass</li>
-				<li>my house in gvl FL, drop by really! email first</li>
-				<li>... stores contact me for super wholesale discounts ...</li>
+				<li>go look</li>
 			</ul>
-			<p>also hey If you write and like review copies those are here! just yodel</p>
 
 			<hr>
 			<p>Currently operating at:</p>
 
+			<s>2110 NE 21st Terrace
+			Gainesville FL 32609</s><br><br>
 			<s>1604 NE 6th Terrace
-			Gainesville FL 32609</s>
+			Gainesville FL 32609</s><br><br>
 			<p>1908 NW 2nd St<br/>
 			Gainesville FL 32609</p>
 

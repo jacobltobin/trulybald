@@ -40,28 +40,19 @@
 		<div id="head">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-8">
 						<a href="/"><img id="top-logo" class="img img-responsive" src="images/logo-sm.gif" alt=""></a>
+					</div>
+					<div class="col-md-4">
 						<div class="sub-head">
-							<p>private press (<b style="color: red">$$not for profit$$</b>)<br/>
-								support your local shut in pop recorder</p>
+							<p>private press (<b style="color: red">$$not for profit$$ hahahaha ahahahaha!!!</b>)<br/>
+								~~ not really too serious ~~ this is just fun ~~ are you a critic too? ~~ leave us alone </p>
 								<hr>
-								<p>as of april <strong>22 2016 12:23pm</strong> here are some bit more nascent releases on some horizon</p>
-								<ul>
-									<li>TB*** ||| Pamela_ and her sons - ________________ ???</li>
-									<li>TB*** ||| Sad Eyes - Vegetables</li>
-									<li>TB*** ||| Christina Schneider - ________________ ???</li>
-									<li>TB*** ||| Ben Varian / More Eaze - split cass</li>
-									<li>TB*** ||| Best of Steely Dan haha</li>
-									<li>TB*** ||| Disguiseworks ... co-re ?</li>
-									<li>TB*** ||| Best of - JonbonJovi</li>
-									<li>TB*** ||| Jade Harrison Tech Guru &amp; Slade Davis Digitech Sales Rep - Leather &amp; Lace (definitely a CD)</li>
-									<li>TB*** ||| Mans Trash ???</li>
-									<li>TB*** ||| Riley Reasor ????</li>
-									<li>TB*** ||| Pancake Hat - Pancake Hat</li>
-								</ul>
+								<p>passively featuring and casually representing works by miracle roy, larry wish, ben varian, jake tobin, tankorean, nate henricks, zach phillips, and many more</p>
+								<p>as of july <strong>28 2016 2:35pm</strong> there are some bit more nascent releases on some balding horizon brewing in the cognitive plains of:</p>
+								<p>DISGUISEWORKS!, marcus maurice / ben varian, itch princess (katelyn farstad), sad eyes, pamela_ and her sons, andy loebs</p>
 							<div id="navigation">
-								<a href="news.php">news</a> <a target="new" href="http://igm.univ-mlv.fr/~pivoteau/STRUCT/PROG/liste-mots-anglais-perm.txt">list</a>
+								<a target="new" href="http://igm.univ-mlv.fr/~pivoteau/STRUCT/PROG/liste-mots-anglais-perm.txt">list</a>
 							</div>
 						</div>
 					</div>
