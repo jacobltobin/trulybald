@@ -1,0 +1,107 @@
+* {
+	font-family: times;
+	letter-spacing: 4px!important;
+	line-height: .8em;
+}
+p {
+	line-height: .6em;
+}
+p:hover {
+	line-height: 1em!important;
+}
+a {
+	color: blue!important;
+	text-decoration: underline!important;
+}
+html {
+	height: 100%;
+    background-color: #fff;
+    background-size: 510px;
+    background-repeat: repeat;
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+}
+hr {
+	border-top: 3px double aqua;
+}
+body {
+	background-color: transparent;
+}
+#head {
+	padding-bottom: 35px;
+}
+.sub-head {
+	margin: 0 0;
+	display: block;
+    max-width: 100%;
+    width: 400px;
+    border: 1px solid red;
+    color: #000;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+.sub-head a {
+	color: blue;
+	background-color: #fff;
+	padding: 0 10px;
+}
+#top-logo {
+	display: block;
+	margin: 0 0;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.container {
+	max-width: 700px;
+	margin: 0 0 !important;
+	/*background-color: #fff;*/
+}
+/* release grid */
+#release-grid .item {
+	margin-bottom: 20px;
+}
+.release-info {
+    color: #000;
+    /*border: 1px solid blue;*/
+    letter-spacing: 3px;
+}
+#release-page .release-info {
+	font-size: 12px;
+}
+#release-page h3 {
+	margin-top: 5px;
+	font-weight: bold;
+}
+#release-page audio {
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 4px;
+}
+#release-page .release-image {
+	position: relative;
+}
+#release-page .buy-dl {
+	position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    padding: 0;
+}
+#release-page .download-link {
+    background-color: #fff!important;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+}
+#release-page .release-info a {
+	color: blue;
+}
+
+.subpage {
+	letter-spacing: 3px;
+	max-width: 440px;
+	font-size: 12px;
+	background-color: #222;
+	color: #fff;
+}
