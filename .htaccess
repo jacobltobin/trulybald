@@ -1,3 +1,2 @@
 RewriteEngine on
-RewriteRule ^release release.php [NC, L]
-RewriteRule ^release/([0-9a-zA-Z]+) release.php?cat=$1
+RewriteRule ^release/([0-9a-zA-Z]+)$ release.php?cat=$1 [NC, L]
