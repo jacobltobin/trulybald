@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^([a-zA-Z0-9]+)/$ /release.php?$1
+RewriteRule ^([a-zA-Z0-9]+)/$ release.php?$1
