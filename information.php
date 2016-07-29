@@ -49,5 +49,9 @@ require_once('inc/head.php');
 		</div>
 	</div>
 </div>
-</body>
-</html>
+
+<? 
+
+require_once('inc/foot.php');
+
+?>

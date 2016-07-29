@@ -101,5 +101,8 @@ $releases = json_decode($json);
 	</div>
 </div>
 
-</body>
-</html>
+<? 
+
+require_once('inc/foot.php');
+
+?>

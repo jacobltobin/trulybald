@@ -48,7 +48,6 @@ echo '<div id="release-page" class="container">
 	</div>
 </div>';
 
-?>
+require_once('inc/foot.php');
 
-</body>
-</html>
+?>

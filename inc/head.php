@@ -46,9 +46,9 @@
 					<div class="col-md-4">
 						<div class="sub-head">
 							<p>private press (<b style="color: red">$$not for profit$$ hahahaha ahahahaha!!!</b>)<br/>
-								~~ not really too serious ~~ this is just fun ~~ are you a critic too? ~~ leave us alone </p>
+								~~ not really too serious ~~ ;)</p>
 								<hr>
-								<p>passively featuring and casually representing works by miracle roy, larry wish, ben varian, jake tobin, tankorean, nate henricks, zach phillips, and many more</p>
+								<p>featuring and casually representing works by miracle roy, larry wish, ben varian, jake tobin, tankorean, nate henricks, zach phillips, and many more</p>
 								<p>as of july <strong>28 2016 2:35pm</strong> there are some bit more nascent releases on some balding horizon brewing in the cognitive plains of:</p>
 								<p>DISGUISEWORKS!, marcus maurice / ben varian, itch princess (katelyn farstad), sad eyes, pamela_ and her sons, andy loebs</p>
 							<div id="navigation">

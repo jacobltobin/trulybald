@@ -28,16 +28,20 @@ echo '<div id="release-page" class="container">
 	<br>
 	<div class="row">
 		<div class="col-md-12">
+		<h3>
+			'.$release->artist.' <em>'.$release->title.'</em>
+		</h3>
+		</div>
+		<div class="col-md-6">
 			<div class="release-image">
 				<img style="border: 1px solid '.$release->color.'" class="img img-responsive" src="releases/'.$dir.'/img/cover.jpg" alt="">
 				<div class="buy-dl">
 					<a class="download-link" style="background-color: '.$release->color.'" href="releases/'.$dir.'/music/download.zip">download (.wav)</a>
 				</div>
 			</div>
+		</div>
+		<div class="col-md-6">
 			<div class="release-info">
-				<h3>
-					'.$release->artist.' <em>'.$release->title.'</em>
-				</h3>
 				<h5>
 					'.$release->format.'
 				</h5>
@@ -51,23 +55,25 @@ echo '<div id="release-page" class="container">
 					'.$release->price.'
 				</p>
 					'.$release->paypal.'
-				<h5>
-					~~stream~~
-				</h5>
-				<h5><span id="play-all"><u style="cursor: pointer; background-color: yellow">TRULY BALD "SIMULPLAY"&reg; (WARNING EXPERIMENTAL FEATURE)</u></span></h5>';
+			</div>
+		</div>
+		<div class="col-md-12">
+			<h5><span id="play-all"><u style="cursor: pointer; background-color: yellow">TRULY BALD "SIMULPLAY"&reg; (WARNING EXPERIMENTAL FEATURE)</u></span></h5>';
 
-				foreach ($tracks as &$track) {
+			foreach ($tracks as &$track) {
 
-					if ($track != '.' && $track != '..' && $track != '.DS_Store' && $track != 'download.zip') {
-						echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</strong><br>
-						<audio controls preload="none">
-							<source src="releases/'.$dir.'/music/'.$track.'" type="audio/mp3">
-								Your browser does not support the audio element.
-							</source>
-						</audio>';
-					}
-
+				if ($track != '.' && $track != '..' && $track != '.DS_Store' && $track != 'download.zip') {
+					// echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</strong><br>
+					// <audio controls preload="none">
+					// 	<source src="releases/'.$dir.'/music/'.$track.'" type="audio/mp3">
+					// 		Your browser does not support the audio element.
+					// 	</source>
+					// </audio>';
+					echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</strong><br>';
+					echo '<div class="audio-player" data-file="releases/'.$dir.'/music/'.$track.'"></div>';
 				}
+
+			}
 
 		echo '</div>
 		</div>
@@ -75,7 +81,7 @@ echo '<div id="release-page" class="container">
 </div>
 <script>$("#play-all").click(function() {for (var i = 0; i < document.getElementsByTagName("audio").length; i++) { document.getElementsByTagName("audio")[i].play()}});</script>';
 
+require_once('inc/foot.php');
+
 ?>
 
-</body>
-</html>
