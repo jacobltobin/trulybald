@@ -69,7 +69,8 @@ echo '<div id="release-page" class="container">
 					// 		Your browser does not support the audio element.
 					// 	</source>
 					// </audio>';
-					echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</strong><br>';
+					echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</a></strong><br>';
+
 					echo '<div class="audio-player" data-file="releases/'.$dir.'/music/'.$track.'"></div>';
 				}
 

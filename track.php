@@ -18,6 +18,8 @@ $meta->url = 'http://trulybald.com'.$_SERVER['REQUEST_URI'];
 $meta->description = 'a ... .. .. music .... album . by '.$release->artist;
 $meta->image = 'http://trulybald.com/releases/'.$dir.'/img/cover.jpg';
 $meta->title = $track.' from '.$release->artist.'\'s '.$release->title;
+$meta->audio = 'http://trulybald.com/releases/'.$dir.'/music/'.$track;
+
 require_once('inc/head.php');
 
 echo '<div id="release-page" class="container">

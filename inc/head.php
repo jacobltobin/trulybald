@@ -20,7 +20,6 @@
 		<link rel="stylesheet" type="text/css" href="css/bald.css">
 		<script src="vendor/jquery-1.12.3.min.js"></script>
 		<script src="vendor/underscore.js"></script>
-		<script src="js/bald.js"></script>
 
 		<title><?php echo $meta->title ?></title>
 
@@ -31,6 +30,11 @@
 			'<meta property="og:title" content="'.$meta->title.'"/>'.
 			'<meta property="og:description" content="'.$meta->description.'"/>'.
 			'<meta property="og:image" content="'.$meta->image.'"/>';
+
+			if ($meta->audio) {
+				echo '<meta property="og:audio" content="'.$meta->audio.'" />';
+				echo '<meta property="og:audio:type" content="audio/vnd.facebook.bridge" />';
+			}
 		?>
 		
 
