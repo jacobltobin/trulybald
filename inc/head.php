@@ -30,6 +30,9 @@
 			'<meta property="og:title" content="'.$meta->title.'"/>'.
 			'<meta property="og:description" content="'.$meta->description.'"/>'.
 			'<meta property="og:image" content="'.$meta->image.'"/>';
+			'<meta property="og:image:width" content="790"/>';
+			'<meta property="og:image:height" content="790"/>';
+
 
 			if ($meta->audio) {
 				echo '<meta property="og:audio" content="'.$meta->audio.'" />';
