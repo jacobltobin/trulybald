@@ -32,6 +32,8 @@
 			'<meta property="og:image" content="'.$meta->image.'"/>';
 			'<meta property="og:image:width" content="790"/>';
 			'<meta property="og:image:height" content="790"/>';
+			'<meta property="fb:app_id" content="1142049949187617"/>';
+
 
 
 			if ($meta->audio) {
@@ -44,6 +46,27 @@
 	</head>
 
 	<body>
+
+		<!-- :( :( :( :( :( :( :( :( :( :( :( :( :( FROWN -->
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1142049949187617',
+		      xfbml      : true,
+		      version    : 'v2.7'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- :( :( :( :( :( :( :( :( :( :( :( :( :( FROWN -->
+
 		<div id="head">
 			<div class="container">
 				<div class="row">
