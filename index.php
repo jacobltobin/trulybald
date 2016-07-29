@@ -76,7 +76,7 @@ $releases = json_decode($json);
 			<p>Find various selections from our catalogue at :::</p>
 
 			<ul style="background-color: orange">
-				<li>go look</li>
+				<li>some record stores</li>
 			</ul>
 
 			<hr>
