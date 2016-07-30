@@ -10,7 +10,7 @@ p:hover {
 	line-height: 1em!important;
 }
 a {
-	color: blue!important;
+	color: blue;
 	text-decoration: underline!important;
 }
 html {

@@ -58,29 +58,27 @@ echo '<div id="release-page" class="container">
 			</div>
 		</div>
 		<div class="col-md-12">
-			<h5><span id="play-all"><u style="cursor: pointer; background-color: yellow">TRULY BALD "SIMULPLAY"&reg; (WARNING EXPERIMENTAL FEATURE)</u></span></h5>';
+			<!--<h5><span id="play-all"><u style="cursor: pointer; background-color: yellow">TRULY BALD "SIMULPLAY"&reg; (WARNING EXPERIMENTAL FEATURE)</u></span></h5>-->';
 
-			foreach ($tracks as &$track) {
-
-				if ($track != '.' && $track != '..' && $track != '.DS_Store' && $track != 'download.zip') {
-					// echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</strong><br>
-					// <audio controls preload="none">
-					// 	<source src="releases/'.$dir.'/music/'.$track.'" type="audio/mp3">
-					// 		Your browser does not support the audio element.
-					// 	</source>
-					// </audio>';
-					echo '<strong><a href="track.php?cat='.$cat.'&track='.$track.'">'.$track.'</a></strong><br>';
-
-					echo '<div class="audio-player" data-file="releases/'.$dir.'/music/'.$track.'"></div>';
-				}
-
-			}
+			echo '<div class="audio-player">';
+				echo '<hr/>';
+				require 'libraries/TBaldPlayer/TBaldPlayer_player.html';
+				echo '<div class="track-list">';
+					foreach ($tracks as &$track) {
+						if ($track != '.' && $track != '..' && $track != '.DS_Store' && $track != 'download.zip') {
+							echo '<div class="track" data-file="releases/'.$dir.'/music/'.$track.'">';
+								echo '<strong>'.$track.'<a href="track.php?cat='.$cat.'&track='.$track.'">---></a></strong><br>';
+							echo '</div>';
+						}
+					}
+				echo '</div>';
+			echo '</div>';
+			echo '<span style="background-color:red">please be patient with the audio player, thanks</span><br>';
 
 		echo '</div>
 		</div>
 	</div>
-</div>
-<script>$("#play-all").click(function() {for (var i = 0; i < document.getElementsByTagName("audio").length; i++) { document.getElementsByTagName("audio")[i].play()}});</script>';
+</div>';
 
 require_once('inc/foot.php');
 

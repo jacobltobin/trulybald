@@ -1,5 +1,5 @@
 $(document).ready(function() {
 	$('.audio-player').each(function(i, e) {
-		TrulyBaldAudioPlayer.createAudioPlayer(e)
+		new AudioPlayer(e);
 	})
 })

@@ -17,9 +17,8 @@
 
 	<head>
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="css/bald.css">
-		<script src="vendor/jquery-1.12.3.min.js"></script>
-		<script src="vendor/underscore.js"></script>
 
 		<title><?php echo $meta->title ?></title>
 
