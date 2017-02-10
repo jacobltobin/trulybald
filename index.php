@@ -10,16 +10,32 @@ $releases = json_decode($json);
 <div id="content">
 	<div class="container-fluid">
 		<div class="col-md-6">
-			<h4><strong>recent important updates abou our company</strong></h4>
+			<h4><strong>recent important updates about our company</strong></h4>
+			<!-- <a href="/images/buddy.png">click here to see an image of our realtor, Buddy</a><br><br> -->
+			<hr>
+			<!-- <p>listen to this after reading our website <br><a href="https://www.youtube.com/watch?v=pKw2v1a5zok">https://www.youtube.com/watch?v=pKw2v1a5zok</a></p> -->
 			<hr>
 			<ul>
+				<!-- <li><h1 style="background-color: salmon">"Tell you what i learned about talking to an empty room - the room is never as empty as you wanna assume." - Ben Varian</h1></li>
+				<s>
 				<li>shipping out tapes july 28 2016</li>
 				<li>how far do you lean your motorcycle?</li>
 				<li>elaborate bread</li>
-				<li>insect cleaner - why kill'em when you can clean'em? (thanks addison)</li>
+				</s>
+				<li><img src="images/tgreen.png"></li>
+				<li>- Tyborg (Tyler Green)</li>
+				<s> -->
+				<!-- <li>insect cleaner - why kill'em when you can clean'em? (thanks addison)</li>
 				<li>i was on the board (ceo or surf?)</li>
-				<li>lock-n'-load shish kabob gloves</li>
-				<li>musician sounds too much like magician and music is a craft in so where life is the whole casserole </li>
+				<li>lock-n'-load shish kabob gloves</li> -->
+				</s>
+				<!-- <li><img src="images/nonsense.png"></li> -->
+				<!-- <li>i find my favorite form of escape is cooking myself some vegetables</li> -->
+				<li></li>
+				<!-- <li>musician sounds too much like magician and music is a craft in so where life is the whole casserole </li> -->
+				<li></li>
+				<!-- <li>and so we demonstrate that we do not have the answer but are perpetually toiling in the muck of active uncertainty!</li> -->
+				<li></li>
 			</ul>
 			<hr>
 		</div>
@@ -86,10 +102,19 @@ $releases = json_decode($json);
 			Gainesville FL 32609</s><br><br>
 			<s>1604 NE 6th Terrace
 			Gainesville FL 32609</s><br><br>
-			<p>1908 NW 2nd St<br/>
-			Gainesville FL 32609</p>
+			<s>1908 NW 2nd St<br/>
+			Gainesville FL 32609</s><br><br>
+			<p style="background-color: yellow">135 Adair Avenue Southeast<br>Atlanta, GA 30315</p>
 
 			<p>(this address VERY subject to change please check back before mailing)</p>
+
+			<hr>
+
+			<!-- <p>to clear up - all we got any more is making things for each other. tbald isn't smoke and mirroring w/ DIY ethics to obfuscate a long term running-a-label-as-a-career intent (lol!) - just experimenting with being SOMETHING. something to save up our money for besides a NEW HYDRAULIC STAND-UP DESK and UV FLOOR LAMPS. lets be honest you cant have physical copies of music without $$$$$$, and so i have a generally uncreative job programming computers from which i funnel money into PLASTIC music carrying 'novelties' (choice word by sherrill kyle) that hopefully provide invaluable help in discovering new many layered interwoven meanings hiding all over the place. peace!</p><hr> -->
+
+			<hr>
+
+			<b style="color: red"></b>
 
 			<hr>
 
