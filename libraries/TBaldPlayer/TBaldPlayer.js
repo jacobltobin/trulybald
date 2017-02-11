@@ -10,11 +10,11 @@
 
     var AudioPlayer = function(element) {
     	// hi
-    	var self = this;
+    	ap = this;
     	this.audio = new Audio();
     	this.container = element;
-    	this.playHandler = new PlayHandler(self);
-    	this.controlHandler = new ControlHandler(self);
+    	this.playHandler = new PlayHandler(ap);
+    	this.controlHandler = new ControlHandler(ap);
     	this.tracks = $(this.container).find('.track');
     	this.trackIndex = 0;
     	this.playHandler.switchTrack(this.trackIndex);
@@ -27,30 +27,24 @@
     	// define
     	this.controls = {
     		play: $(audioPlayer.container).find('.play-button'),
-    		timeBar: $(audioPlayer.container).find('.time-bar'),
     		next: $(audioPlayer.container).find('.next-button'),
     		prev: $(audioPlayer.container).find('.previous-button'),
-    		trackPlay: $(audioPlayer.container).find('.track-play-button')
+    		trackPlay: $(audioPlayer.container).find('.track-play-button'),
+    		timeBar: {
+    			buffer: $(audioPlayer.container).find('.time-bar-buffer-background'),
+    			played: $(audioPlayer.container).find('.time-bar-played-background'),
+    			handle: $(audioPlayer.container).find('.time-bar-handle')
+    		}
     	};
 
     	// initiate
-    	this.controls.timeBar.slider({
-            value: 0,
-            min: 0,
-            max: 100,
-            step: .1,
-            slide: function(event, ui) {
-                // console.log(ui.value);
-            }
-        });
+
         this.controls.timeBar.nudge = function(val) {
         	this.set();
         	var v = val ? val : audioPlayer.audio.currentTime;
-        	console.log(audioPlayer.audio.buffered.end(0));
-        	this.slider("option", "value", v);
+        	console.log(audioPlayer.audio.duration);
         };
         this.controls.timeBar.set = function() {
-        	this.slider("option", "max",  audioPlayer.audio.duration);
         };
 
         // attach
@@ -94,7 +88,7 @@
     	};
 
     	// on update
-    	audioPlayer.audio.addEventListener("timeupdate", function() {
+    	audioPlayer.audio.addEventListener('timeupdate', function() {
     		audioPlayer.controlHandler.controls.timeBar.nudge();
     	});
 

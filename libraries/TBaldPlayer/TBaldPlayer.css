@@ -26,3 +26,33 @@
 	background-color: limegreen;
 	color: #fff;
 }
+
+.time-bar {
+	width: 100%;
+	position: relative;
+	height: 30px;
+	background-color: lightgrey;
+}
+.time-bar-handle {
+	position: absolute;
+	width: 15px;
+	height: 40px;
+	top: -5px;
+	left: 0;
+	background-color: blue;
+	cursor: pointer;
+}
+.time-bar-played-background,
+.time-bar-buffer-background {
+	width: 0;
+	height: 40px;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.time-bar-played-background {
+	background-color: purple;
+}
+.time-bar-buffer-background {
+	background-color: gray;
+}
