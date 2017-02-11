@@ -54,8 +54,11 @@ echo '<div id="release-page" class="container">
 				<p>
 					'.$release->price.'
 				</p>
-					'.$release->paypal.'
-			</div>
+					'.$release->paypal;
+				if ($release->soldout) {
+					echo '<p><b>Soul\'d\'out !</b></p>';
+				}
+			echo '</div>
 		</div>
 		<div class="col-md-12">
 			<!--<h5><span id="play-all"><u style="cursor: pointer; background-color: yellow">TRULY BALD "SIMULPLAY"&reg; (WARNING EXPERIMENTAL FEATURE)</u></span></h5>-->';

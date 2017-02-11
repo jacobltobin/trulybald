@@ -16,6 +16,8 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 
 	<head>
+		<base href="/" />
+
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="css/bald.css">

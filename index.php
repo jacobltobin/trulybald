@@ -54,7 +54,7 @@ $releases = json_decode($json);
 		$dir = $release->cat.'_'.$artist.'_'.$title;
 
 		echo '<div class="item col-md-6 col-sm-6 col-xs-6">
-			<a href="release.php?cat='.$release->cat.'">
+			<a href="releases/'.$release->cat.'">
 				<strong style="font-size:20px">'.$release->cat.'</strong>
 				<img style="border: 2px solid '.$release->color.'" class="img img-responsive" src="releases/'.$dir.'/img/cover-th.jpg" alt="">
 			</a>

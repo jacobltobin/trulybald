@@ -11,16 +11,16 @@
     var AudioPlayer = function(element) {
     	// hi
     	var self = this;
+    	this.audio = new Audio();
     	this.container = element;
     	this.playHandler = new PlayHandler(self);
-    	this.controlHandler = new ControlHander(self);
+    	this.controlHandler = new ControlHandler(self);
     	this.tracks = $(this.container).find('.track');
     	this.trackIndex = 0;
-    	this.audio = new Audio();
     	this.playHandler.switchTrack(this.trackIndex);
     };
 
-    var ControlHander = function(audioPlayer) {
+    var ControlHandler = function(audioPlayer) {
     	// hi
     	var self = this;
 
@@ -40,9 +40,18 @@
             max: 100,
             step: .1,
             slide: function(event, ui) {
-                console.log(ui.value);
+                // console.log(ui.value);
             }
         });
+        this.controls.timeBar.nudge = function(val) {
+        	this.set();
+        	var v = val ? val : audioPlayer.audio.currentTime;
+        	console.log(audioPlayer.audio.buffered.end(0));
+        	this.slider("option", "value", v);
+        };
+        this.controls.timeBar.set = function() {
+        	this.slider("option", "max",  audioPlayer.audio.duration);
+        };
 
         // attach
         this.controls.play.click(function() {
@@ -82,7 +91,12 @@
     	this.isPlaying = false;
     	this.currentTrack = {
     		duration: 0
-    	}
+    	};
+
+    	// on update
+    	audioPlayer.audio.addEventListener("timeupdate", function() {
+    		audioPlayer.controlHandler.controls.timeBar.nudge();
+    	});
 
     	// actions
     	this.goToNextTrack = function() {
