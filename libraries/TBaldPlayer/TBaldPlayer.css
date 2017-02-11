@@ -35,7 +35,7 @@
 }
 .time-bar-handle {
 	position: absolute;
-	width: 15px;
+	width: 1px;
 	height: 40px;
 	top: -5px;
 	left: 0;
@@ -45,7 +45,7 @@
 .time-bar-played-background,
 .time-bar-buffer-background {
 	width: 0;
-	height: 40px;
+	height: 30px;
 	top: 0;
 	left: 0;
 	position: absolute;

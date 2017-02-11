@@ -13,8 +13,8 @@
     	ap = this;
     	this.audio = new Audio();
     	this.container = element;
-    	this.playHandler = new PlayHandler(ap);
     	this.controlHandler = new ControlHandler(ap);
+    	this.playHandler = new PlayHandler(ap);
     	this.tracks = $(this.container).find('.track');
     	this.trackIndex = 0;
     	this.playHandler.switchTrack(this.trackIndex);
@@ -41,8 +41,9 @@
 
         this.controls.timeBar.nudge = function(val) {
         	this.set();
-        	var v = val ? val : audioPlayer.audio.currentTime;
-        	console.log(audioPlayer.audio.duration);
+        	var v = val ? val : (audioPlayer.audio.currentTime/audioPlayer.audio.duration)*100;
+        	this.played.css('width', v+'%');
+        	console.log((audioPlayer.audio.currentTime/audioPlayer.audio.duration)*100);
         };
         this.controls.timeBar.set = function() {
         };
@@ -91,6 +92,21 @@
     	audioPlayer.audio.addEventListener('timeupdate', function() {
     		audioPlayer.controlHandler.controls.timeBar.nudge();
     	});
+    	audioPlayer.audio.addEventListener('loadedmetadata', function() {
+    		
+    	});
+    	audioPlayer.audio.addEventListener('progress', function() {
+    		if (audioPlayer.audio.buffered.length) {
+    			var bufferedEnd = audioPlayer.audio.buffered.end(audioPlayer.audio.buffered.length - 1);
+			    var duration = audioPlayer.audio.duration;
+			    if (duration && duration > 0) {
+					audioPlayer.controlHandler.controls.timeBar.buffer.css('width', ((bufferedEnd / duration)*100) + "%");
+			    }
+    		}
+		});
+		audioPlayer.audio.addEventListener('ended', function() {
+			audioPlayer.playHandler.goToNextTrack();
+		});
 
     	// actions
     	this.goToNextTrack = function() {
