@@ -1,2 +1,4 @@
 releases/**/music/
 *.DS_Store
+loading-bay/*
+temp/*
