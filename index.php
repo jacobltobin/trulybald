@@ -11,23 +11,32 @@ $releases = json_decode($json);
 	<div class="container-fluid">
 		<div class="col-md-6">
 			<h4><strong>recent important updates about our company</strong></h4>
-			<!-- <a href="/images/buddy.png">click here to see an image of our realtor, Buddy</a><br><br> -->
+			<a href="/images/buddy.png">click here to see an image of our realtor, Buddy</a><br><br>
 			<hr>
-			<!-- <p>listen to this after reading our website <br><a href="https://www.youtube.com/watch?v=pKw2v1a5zok">https://www.youtube.com/watch?v=pKw2v1a5zok</a></p> -->
+			<p>listen to this while reading our website <br><a href="https://www.youtube.com/watch?v=pKw2v1a5zok">https://www.youtube.com/watch?v=pKw2v1a5zok</a></p>
+			<hr>
+			UPCOMING RELEASES FROM <br>
+			TB010 - More Eaze / Ben Varian *Split* <br>
+			TB011 - Pamela_ and her sons *Golden Paradise* <br>
+			TB*** - DISGUISEWORKS *DISGUISEWORKS* <br>
+			TB*** - Itch Princess *Everyone's a Doctor* <br>
+			TB*** - Bulldada *Bulldada's Tavern* <br>
+			TB*** - Celines ********* <br>
+			TB*** - Big Ded --- 7" <br>
+			TB*** - Miracle Roy *Calming Signals* <br>
 			<hr>
 			<ul>
-				<!-- <li><h1 style="background-color: salmon">"Tell you what i learned about talking to an empty room - the room is never as empty as you wanna assume." - Ben Varian</h1></li>
+				<li><h1 style="background-color: salmon">"Tell you what i learned about talking to an empty room - the room is never as empty as you wanna assume." - Ben Varian</h1></li>
 				<s>
-				<li>shipping out tapes july 28 2016</li>
 				<li>how far do you lean your motorcycle?</li>
 				<li>elaborate bread</li>
 				</s>
 				<li><img src="images/tgreen.png"></li>
 				<li>- Tyborg (Tyler Green)</li>
-				<s> -->
-				<!-- <li>insect cleaner - why kill'em when you can clean'em? (thanks addison)</li>
+				<s>
+				<li>insect cleaner - why kill'em when you can clean'em? (thanks addison)</li>
 				<li>i was on the board (ceo or surf?)</li>
-				<li>lock-n'-load shish kabob gloves</li> -->
+				<li>lock-n'-load shish kabob gloves</li>
 				</s>
 				<!-- <li><img src="images/nonsense.png"></li> -->
 				<!-- <li>i find my favorite form of escape is cooking myself some vegetables</li> -->
