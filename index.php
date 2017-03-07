@@ -10,10 +10,9 @@ $releases = json_decode($json);
 <div id="content">
 	<div class="container-fluid">
 		<div class="col-md-6">
+			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/300334261%3Fsecret_token%3Ds-mcRDb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			<h4><strong>recent important updates about our company</strong></h4>
 			<a href="/images/buddy.png">click here to see an image of our realtor, Buddy</a><br><br>
-			<hr>
-			<p>listen to this while reading our website <br><a href="https://www.youtube.com/watch?v=pKw2v1a5zok">https://www.youtube.com/watch?v=pKw2v1a5zok</a></p>
 			<hr>
 			UPCOMING RELEASES FROM <br>
 			TB010 - More Eaze / Ben Varian *Split* <br>
