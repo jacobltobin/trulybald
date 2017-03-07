@@ -10,7 +10,6 @@ $releases = json_decode($json);
 <div id="content">
 	<div class="container-fluid">
 		<div class="col-md-6">
-			<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/300334261%3Fsecret_token%3Ds-mcRDb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 			<h4><strong>recent important updates about our company</strong></h4>
 			<a href="/images/buddy.png">click here to see an image of our realtor, Buddy</a><br><br>
 			<hr>
@@ -53,6 +52,19 @@ $releases = json_decode($json);
 		<div class="row">
 			<div class="col-md-6">
 
+				<div class="item col-md-6 col-sm-6 col-xs-6">
+					<a href="#">
+						<strong style="font-size:20px">TB011 Coming SOON</strong>
+						<img style="border: 2px solid;" class="img img-responsive" src="images/pam-un.png" alt="">
+					</a>
+					<div class="release-info">
+						<p>
+							Pamela_ and her sons<br>
+							<em>Golden Paradise</em><br>
+						</p>
+					</div>
+				</div>
+
 <?php
 
 	foreach ($releases[0] as &$release) {
@@ -63,9 +75,14 @@ $releases = json_decode($json);
 
 		echo '<div class="item col-md-6 col-sm-6 col-xs-6">
 			<a href="releases/'.$release->cat.'">
-				<strong style="font-size:20px">'.$release->cat.'</strong>
-				<img style="border: 2px solid '.$release->color.'" class="img img-responsive" src="releases/'.$dir.'/img/cover-th.jpg" alt="">
-			</a>
+				<strong style="font-size:20px">'.$release->cat.'</strong>';
+				if ($release->gif) {
+					echo '<img style="border: 2px solid '.$release->color.'" class="img img-responsive" src="releases/'.$dir.'/img/cover-th.gif" alt="">';
+				}
+				else {
+					echo '<img style="border: 2px solid '.$release->color.'" class="img img-responsive" src="releases/'.$dir.'/img/cover-th.jpg" alt="">';
+				}
+			echo '</a>
 			<div class="release-info">
 				<p>
 					'.$release->artist.'<br>
